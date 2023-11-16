@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Adicione o link para o FontAwesome aqui -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e2640; 
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #header {
+            background-image: url('capa.png');
+            background-size: cover;
+            height: 175px;
+            width: 100%;
+            position: relative;
+        }
+		html {
+        scroll-behavior: smooth;
+		}
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #7289DA; 
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    background-image: url('avatar.png');
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile-pic:hover {
+    transform: translate(-50%, -0%) scale(1.3);
+}
+
+        #social-icons {
+            margin-top: 20px;
+        }
+
+        #social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s; 
+        }
+
+        #social-icons a:hover {
+            transform: scale(2.2); 
+        }
+
+        #username {
+            font-size: 36px;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        #subtext {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        #portfolio-button,
+        #projects-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px; 
+            height: 40px; 
+            background-color: #dcdcdc; 
+            color: #1e2640; 
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 0; 
+            border-radius: 25px; 
+            border: 2px solid #1e2640; 
+            transition: background-color 0.3s, border-color 0.3s; 
+        }
+
+        #portfolio-button:hover,
+        #projects-button:hover {
+            background-color: #333; 
+            border-color: #7289DA; 
+            color: #fff; 
+        }
+        #menu {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(30, 38, 64, 0.8);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        #menu a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        #menu a i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+		.neon-button {
+		color: #fff;
+		text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+		transition: text-shadow 0.3s;
+		}
+
+		.neon-button:hover {
+			text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+		}
+		.selected-button {
+			color: #fff;
+			text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+		}
+
+		.not-selected-button {
+			color: #fff;
+		}
+
+    </style>
+	    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+	
+</head>
+<body>
+    <div id="header">
+        <div id="profile-pic"></div>
+    </div>
+	
+	<div id="username">Jô Artunes</div>
+    <div id="subtext">Em desenvolvimento...</div>
+
+    <div id="social-icons">
+		<a href="https://www.instagram.com/dev.joartunes/" class="fab fa-instagram" target="_blank"></a>
+		<a href="https://t.me/joartunes?start=phone" class="fab fa-telegram-plane" target="_blank"></a>
+		<a href="https://github.com/joartur/" class="fab fa-github" target="_blank"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+	<br/>
+
+    <div id="menu">
+        <a href="#top" class="menu-button"><i class="fas fa-house-user"></i></a>
+        <a href="#contato" class="menu-button"><i class="far fa-envelope"></i></i></a>
+        <a id="share-button" href="#"><i class="far fa-share-square"></i></a>
+    </div>
+	
+	<section id="portfolio">
+    <a href="#" id="portfolio-button">Meu Portfólio</a>
+	<a href="#" id="projects-button">###########</a>
+	<a href="#" id="projects-button">0101010101</a>
+	<a href="#" id="projects-button">Outros Projetos</a>
+	</section>
+	
+	<section id="contato">
+		    <h1>Se desejar, envie uma mensagem</h1>
+
+    <form id="contact-form" action="https://formspree.io/f/mdorygzb" method="POST">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+	</section>
+	<br/><br/><br/><br/>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('share-button').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        if (navigator.share) {
+            navigator.share({
+                title: 'Meu Perfil - Jô Artunes',
+                text: 'Confira meus projetos',
+                url: 'https://abre.ai/g6dJ'
+            })
+                .then(() => console.log('Compartilhado com sucesso'))
+                .catch((error) => console.error('Erro ao compartilhar:', error));
+        } else {
+            const shareURL = 'https://abre.ai/g5q6';
+            window.open(shareURL, '_blank');
+        }
+    });
+});
+</script>
+
+<script>
+    function selectButton(button) {
+        button.classList.add('selected-button');
+        button.classList.remove('not-selected-button');
+    }
+
+    function unselectButton(button) {
+        button.classList.remove('selected-button');
+        button.classList.add('not-selected-button');
+    }
+
+    const menuButtons = document.querySelectorAll('#menu a');
+
+    menuButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            menuButtons.forEach(unselectButton);
+            selectButton(button);
+        });
+    });
+
+    selectButton(menuButtons[0]);
+</script>
+	
+<script src="https://www.drv.tw/inc/wd.js?s=bemvindoaomeuportifolio"></script>
+
+	</body>
+</html>
